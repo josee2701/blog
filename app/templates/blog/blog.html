@@ -1,0 +1,63 @@
+{% load static %}
+<html>
+  <head>
+    <title>Proyecto Blog</title>
+  </head>
+  <body>
+    <div id="container">
+      <div id="cabecera">
+        <!-- Contenido de la cabecera -->
+      </div>
+      <div id="post">
+        <!-- Contenido del post -->
+        <h1>Aqu&iacute; inicia la historia de un gran proyecto</h1>
+        <p>Y este es el p&aacute;rrafo de inicio donde vamos a explicar las cosas incre&iacute;bles que se pueden hacer con ramas</p>
+      </div>
+      <div id="footer" class="d-flex justify-content-center">
+        <nav class="navbar navbar-dark bg-dark fixed-bottom">
+          <!-- Navbar content -->
+          <a class="navbar-brand" href="#">Navbar w/ text</a>
+          <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarText"
+            aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse navbar-expand" id="navbarText">
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item active">
+                <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Features</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Pricing</a>
+              </li>
+            </ul>
+            <span class="navbar-text"> Navbar text with an inline element </span>
+          </div>
+        </nav>
+      </div>
+    </div>
+    
+    <div id="container">
+      <div id="cabecera">
+        {% comment %} <img id="logo" src="imagenes/dragon.png" /> {% endcomment %} Hyperblog
+        <span id="tagline">Tu blog de confianza</span>
+      </div>
+      <div id="post">
+        
+        <p><img src="imagenes/equipo.jpg" width="100%" /></p>
+        <p>
+          Los blogs son la mejor forma de compartir informaci&oacute;n y tus ideas. Mucho mas que ir a conferencias o salir en Youtube. Excepto si
+          eres un rockstar. Pero estad&iacute;sticamente no lo eres.... por ahora.
+        </p>
+        <p>Suscribete y dale like</p>
+      </div>
+      </div>
+      <div id="footer">Hecho con amor en Platzi &lt;3</div>
+    </div>
+  </body>
+  <head>
+    <link rel="stylesheet" type="text/css" href="{% static 'assets/css/estilos.css' %}" />
+  </head>
+</html>
